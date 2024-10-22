@@ -22,3 +22,8 @@ Connectors for [Apache HBase&trade;](https://hbase.apache.org)
 
   * [Kafka Proxy](https://github.com/apache/hbase-connectors/tree/master/kafka)
   * [Spark](https://github.com/apache/hbase-connectors/tree/master/spark)
+
+# Sprout
+Yes, this is a clone of a public repo.  Yes, this is important and used in both listening and DFZ zones.  
+
+This was created to...  
