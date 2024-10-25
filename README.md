@@ -20,5 +20,26 @@ limitations under the License.
 
 Connectors for [Apache HBase&trade;](https://hbase.apache.org)
 
-  * [Kafka Proxy](https://github.com/apache/hbase-connectors/tree/master/kafka)
-  * [Spark](https://github.com/apache/hbase-connectors/tree/master/spark)
+* [Kafka Proxy](https://github.com/apache/hbase-connectors/tree/master/kafka)
+* [Spark](https://github.com/apache/hbase-connectors/tree/master/spark)
+
+
+# Sprout
+
+Yes, this is a clone of a public repo.  Yes, this is important and used in both listening and DFZ zones.
+
+Why Does this exist?  Simple: the hadoop ecosystem is a dependency nightmare.
+
+Keeping up with security patches is a non starter is many cases.
+
+# How to test
+
+In `./spark/pom` update this line:
+```
+<protocArtifact>com.google.protobuf:protoc:${external.protobuf.version}:exe:${os.detected.classifier}</protocArtifact>
+```
+
+To Be this instead
+```
+<protocArtifact>com.google.protobuf:protoc:${external.protobuf.version}:exe:osx-x86_64</protocArtifact>
+```
